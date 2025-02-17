@@ -2006,6 +2006,8 @@ static int mmc_blk_card_busy(struct mmc_card *card, struct request *req)
 	struct mmc_blk_busy_data cb_data;
 	int err;
 
+	return 0;
+
 	if (rq_data_dir(req) == READ)
 		return 0;
 

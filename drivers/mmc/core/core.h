@@ -62,6 +62,8 @@ u32 mmc_vddrange_to_ocrmask(int vdd_min, int vdd_max);
 
 static inline void mmc_delay(unsigned int ms)
 {
+	return;
+
 	if (ms <= 20)
 		usleep_range(ms * 1000, ms * 1250);
 	else
